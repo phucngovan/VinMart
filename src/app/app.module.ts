@@ -5,16 +5,25 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AddProductsComponent } from './add-products/add-products.component';
 import { ListComponent } from './list/list.component';
+import { SearchComponent } from './search/search.component';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { EditComponent } from './edit/edit.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     AddProductsComponent,
-    ListComponent
+    ListComponent,
+    SearchComponent,
+    EditComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
