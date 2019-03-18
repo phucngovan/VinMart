@@ -12,7 +12,7 @@ export class ProductsService {
   constructor(private http: HttpClient) {
   }
 
-  private baseUrl = 'http://localhost:3000/vinmart';
+  private baseUrl = 'http://localhost:3000/product';
 
   public geProducts(): Observable<Products[]> {
     return this.http.get<Products[]>(this.baseUrl);
